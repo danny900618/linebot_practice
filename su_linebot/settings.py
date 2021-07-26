@@ -28,7 +28,7 @@ SECRET_KEY = 'q47k1wy63h9iu6qjh+o0zcwdd(9sdp=_($y_)9emrd*idy0+mj'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'f7a30a7be7f8.ngrok.io',
+    'de065ddcb724.ngrok.io',
     '*'
 ]
 
@@ -132,6 +132,6 @@ STATICILES_DIRS = [
 ]
 
 CRONJOBS = [
-    ('0 0 * * *', 'chatbot.cron.my_scheduled_job'),
-    ('0 15 * * *', 'myapp.cron.my_scheduled_job2')
+    ('*/1 * * * *', 'chatbot.cronjob.my_scheduled_job2'),
+    ('*/1 * * * *', 'chatbot.cronjob.my_scheduled_job')
 ]
